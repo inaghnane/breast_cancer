@@ -1,0 +1,170 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #eef2f3;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.app-container {
+  display: flex;
+  min-height: 100vh;
+  padding: 50px;
+  gap: 40px;
+  background: #f0f4f8;
+  box-sizing: border-box;
+  flex-direction: row;
+  position: relative;
+  padding-bottom: 200px; /* espace pour footer */
+}
+
+.upload-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.upload-btn:hover {
+  background-color: #0056b3;
+}
+
+.sidebar {
+  flex: 1;
+  max-width: 300px;
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.sidebar h2 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.sidebar p {
+  color: #555;
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+.doctor-image {
+  width: 120px;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.main-content {
+  flex: 2;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  max-width: 700px;
+  overflow-y: auto;
+  max-height: calc(100vh - 150px);
+}
+
+h1 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.upload-label {
+  display: inline-block;
+  background: #3498db;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-weight: bold;
+  user-select: none;
+}
+
+.upload-label:hover {
+  background: #2980b9;
+}
+
+/* Bouton téléchargement modèle */
+.download-btn {
+  display: inline-block;
+  margin-bottom: 20px;
+  background: #27ae60;
+  color: white;
+  padding: 12px 25px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  transition: background 0.3s ease;
+  user-select: none;
+  font-size: 16px;
+}
+
+.download-btn:hover {
+  background: #1e8449;
+}
+
+/* Footer résultats fixé en bas */
+.results-footer {
+  position: fixed;
+  bottom: 0;
+  left: 350px; /* largeur sidebar + gap */
+  right: 50px; /* padding container */
+  background: white;
+  border-top: 3px solid #3498db;
+  box-shadow: 0 -5px 15px rgba(0,0,0,0.1);
+  padding: 20px 30px;
+  max-height: 180px;
+  overflow-y: auto;
+  border-radius: 12px 12px 0 0;
+  font-size: 15px;
+  color: #2c3e50;
+}
+
+.results-footer h2 {
+  margin-top: 0;
+}
+
+.results-footer ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.results-footer li {
+  padding: 5px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.results-footer p {
+  margin: 0;
+  color: #888;
+  font-style: italic;
+}
+
+.upload-section {
+  display: flex;
+  gap: 10px;
+}
+
+#figure {
+  border-radius: 10px;
+}
